@@ -13,8 +13,10 @@ document.getElementById('submitbutton').addEventListener('click',(e)=>{
             // console.log('user not found');
         }
         else{
-            // console.log('user found');
-            views.showProfile(data.profile);
+            // console.log('user found',data.results);
+            views.showProfile(data.results);
+            // console.log(data.image);
+
         }
     })
    

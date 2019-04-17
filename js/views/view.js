@@ -4,8 +4,17 @@ class View{
 
     }
     showProfile(user){
-        this.profile.innerHTML=`
-        <h1>${user.results}</h1>
-        `;
-    }
+        let output;
+        user.forEach(id => {
+            console.log(id.image);
+            output += `
+            <div class="container">
+                <img class="img-fluid" src="${id.image.url}">
+            </div>
+            `;
+        });
+         this.profile.innerHTML = output;
 }
+
+}
+

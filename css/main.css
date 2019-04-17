@@ -10,7 +10,7 @@ html{
     background-image: linear-gradient(to right bottom, rgba(102, 204, 255,0.5 ), rgb(102, 255, 153, 0.5)),
     url('https://images8.alphacoders.com/463/thumb-1920-463477.jpg');
    
-    
+    background-position: auto;
     background-size: cover;
 
 }
