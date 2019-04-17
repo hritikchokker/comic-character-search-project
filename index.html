@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome to the world of comics</title>
+    <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/hopstarter/button/64/Button-Play-icon.png" type="image/x-icon">
+
+   
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+<!-- font awesome css -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+<body>
+   <div class="container-fluid mt-2" id="first">
+       <div class="own-background">
+                <!-- <video class="bg-video"  autoplay muted loop>
+                    <source src="media/first-video.mp4" type="video/mp4">
+                    <source src="img/first-video.ogg" type="video/ogg">
+                    Your browser is not supported!
+                </video>
+             -->
+         <div class="own-background-content">
+             
+             <h1 class="own-background-content__heading pt-5">welcome to the world of comics</h1>
+             <h3 class="heading-display text-center pt-5">in this site you can search any superhero you want to search </h3>
+         </div>
+       </div>
+       <div class="second-section">
+           <h3 class="display-4 input-heading">you can search any superhero you can think of ....</h3>
+           <form class="form-group myform" id="myform" action="">
+               <label for="searchname" id="inputGroup-sizing-lg" class="mt-4 mylabel">Search your hero</label>
+            <input type="text" class="form-control mx-auto inputclass" name="" id="searchname" placeholder="enter the name you want to search" required autocomplete="off">
+            <button type="submit" id="submitbutton" class="btn btn-outline-dark mt-3">search </button>
+           </form>
+           
+       </div>
+       <div id="profile" class="profile"></div>
+
+    <a href="#first" class="fixedbutton"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
+   </div>
+
+
+   
+
+    
+
+    <script src="js/utils/util.js"></script>
+     <script src="js/views/view.js"></script>
+    <script src="js/controllers/controller.js"></script>
+</body>
+</html>

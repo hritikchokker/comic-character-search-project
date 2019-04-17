@@ -1,0 +1,100 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.own-background{
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right bottom, rgba(102, 204, 255,0.5 ), rgb(102, 255, 153, 0.5)),
+    url('https://images8.alphacoders.com/463/thumb-1920-463477.jpg');
+   
+    
+    background-size: cover;
+
+}
+
+.second-section{
+    
+    text-align: center;
+    background-color: #99ffcc;
+    overflow: hidden;
+
+}
+.mylabel{
+    font-size: 2rem;
+}
+.inputclass{
+    text-align: center;
+    width: 60%;
+    align-content: center;
+}
+.myform{
+    text-align: center;
+}
+
+.own-background-content__heading {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 3.5rem;
+    text-align: center;
+    color:black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.own-background-content__heading:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.input-heading {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.input-heading:hover{
+transform:skewY(2deg) skewX(12deg) scale(1.1);
+text-shadow:0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+
+.fixedbutton{
+    right:1.3rem;
+    bottom:0;
+    color: black;
+    position: fixed;
+    z-index: 10000;
+    transform: all .4s;
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: inherit;
+    z-index: -200;
+    opacity: 0.4;
+    overflow: hidden;
+    }
+    .result{
+        background: yellow;
+     
+    }
+
+   
+
+
+ /* .bg-video__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    } */
