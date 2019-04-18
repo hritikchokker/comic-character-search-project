@@ -6,3 +6,6 @@ html {
     height: 95vh;
     overflow: hidden;
 }
+.centerbutton{
+    text-align: center;
+}

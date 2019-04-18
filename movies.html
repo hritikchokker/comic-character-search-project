@@ -1,38 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>movies</title>
-     <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/hopstarter/button/64/Button-Play-icon.png"
-         type="image/x-icon">
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-     <link rel="stylesheet" href="css/formovie.css">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    </head>
+<head>
+  <title>movies</title>
+  <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/hopstarter/button/64/Button-Play-icon.png"
+    type="image/x-icon">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/formovie.css">
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-  <body>
-      <div class="container-fluid movie-section bg-primary">
-          <div class="first" id="movie-first">
-               <h1 class="mt-5 own-background-content__heading">here you can search any movie you want to watch </h1>
-          </div>
-         <div class="form-group text-center">
-           <label id="inputGroup-sizing-lg" class="mt-4 mylabel" for="moviesearch">so the search begins</label>
-           <input type="text" class="form-control mx-auto inputclass" name="" id="moviesearch" aria-describedby="helpId" placeholder="enter the movie name">
-        <button type="submit" id="submitmoviebutton" class="btn btn-outline-dark mt-3">search </button>
-        </div>     
-        </div>
-      
-        <a href="#movie-first" class="fixedbutton"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- <script src="js/views/movie_view.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid movie-section bg-primary">
+    <div class="first" id="movie-first">
+      <h1 class="mt-5 own-background-content__heading">here you can search any movie you want to watch </h1>
+    </div>
+    <form class="form-group"  action="">
+    <div class="row mt-5 ">
+      <div class="col ">
+        <label class="input-group " for="imdbsearch">IMDB ID</label>
+        <input class="form-control w-30 rounded-pill" type="number" name="" id="imdbsearch" placeholder="enter the imdb id" required autocomplete="off">
+      </div>
+      <div class="col">
+        <label for="namesearch">Name</label>
+        <input class="form-control text-center w-30 rounded-pill" type="text" name="" id="namesearch"
+          placeholder="enter the movie title" required autocomplete="off">
+      </div>
+      <div class="col">
+        <label for="yearsearch">Year</label>
+        <input class="form-control text-center w-30 rounded-pill" type="number" name="" id="yearsearch"
+          placeholder="optional"
+          autocomplete="off">
+      </div>
+    </div>
+     <h3 class=" display-5 myform mt-5">if you want to search a tv series please enter its season and episode</h3>
+    <div class="row mt-5 ">
+     
+      <div class="col col-md-6 col-sm-6 col-lg-6">
+         <label for="seasonsearch">Season</label>
+         <input class="form-control text-center rounded-pill" type="number" name="" id="seasonsearch" placeholder="enter the season here"
+           autocomplete="off">
+      </div>
+      <div class="col col-md-6 col-sm-6 col-lg-6">
+        <label class="text-center" for="episodesearch">episode</label>
+        <input class="form-control text-center align-center rounded-pill" type="number" name="" id="episodesearch"
+          placeholder="enter the season here" autocomplete="off">
+      </div>
+    </div>
+    <button id="moviesubmit" class="btn-lg btn-block mt-5 mx-auto btn w-25 rounded-pill btn-outline-danger text-center" type="submit" >submit request</button>
+    </form>
+  </div>
+  <div id="result"></div>
+
+  <a href="#movie-first" class="fixedbutton"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/views/movie_view.js"></script>
   <script src="js/controllers/controller_movie.js"></script>
-  </body>
+</body>
+
 </html>

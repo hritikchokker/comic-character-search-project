@@ -1,3 +1,5 @@
+const movieutil=new MovieUtil;
+const myview = new MovieView;
 document.getElementById('submitmoviebutton').addEventListener('click', (e) => {
     e.preventDefault();
     document.getElementById('moviesearch').value == '' ? alert("Enter a value first") : movieFunction();
@@ -5,5 +7,5 @@ document.getElementById('submitmoviebutton').addEventListener('click', (e) => {
 
 function movieFunction() {
     let movieSearch = document.getElementById('moviesearch').value;
-    console.log(movieSearch);
+    movieutil.getMovie(imdbsearch,namesearch,season,episode,year);
 }
