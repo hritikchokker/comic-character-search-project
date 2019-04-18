@@ -2,9 +2,8 @@ html{
     scroll-behavior: smooth;
 }
 
-.own-background{
-    height: 95vh;
-    width: 100%;
+.mybackground{
+   
     position: relative;
     background-repeat: no-repeat;
     background: linear-gradient(to right bottom, rgba(102, 204, 255,0.5 ), rgb(102, 255, 153, 0.5));
@@ -22,7 +21,7 @@ html{
 
 }
 .mylabel{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .myform{
@@ -49,7 +48,8 @@ html{
 }
 
 .input-heading {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    text-align: justify;
     backface-visibility: hidden;
     animation-name: moveInLeft;
     animation-duration: 1s;

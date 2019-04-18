@@ -10,7 +10,7 @@ class View {
             output += `
            
             <div class="col col-md-6 col-sm-4 col-lg-4">
-         <div class="card bordered" style="width: 27rem; overflow:hidden;">
+         <div class="card bordered" style="width: auto; overflow:hidden;">
             <img src="${id.image.url}" class="card-img-top" alt="not found">
             <div class="card-body">
             <h4 class="text-center">Name: ${id.name}</h4>

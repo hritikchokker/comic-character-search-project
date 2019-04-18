@@ -17,37 +17,36 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
 <body>
-   <div class="container-fluid mt-2" id="first">
-       <div class="own-background">
-         <div class="own-background-content text-center img-fluid">
-             
-             <h1 class="own-background-content__heading pt-5">welcome to the world of comics</h1>
-             <h3 class="heading-display text-center pt-5">in this site you can search any superhero you want to search </h3>
-             <h4 class="mt-5">you can even watch any movie of your choice</h4>
-            <a href="movies.html" class="btn btn-large btn-outline-warning mt-5 p-3 w-25 rounded-pill" id="moviebutton" target="_blank">watch a movie?</a>
-            </div>
-       </div>
-       <div class="second-section">
-           <h3 class="display-4 input-heading">you can search any superhero you can think of ....</h3>
-           <form class="form-group myform" id="myform" action="">
-               <label for="searchname" id="inputGroup-sizing-lg" class="mt-4 mylabel">Search your hero</label>
-            <input type="text" class="form-control w-75 mx-auto rounded-pill text-center align-center" name="" id="searchname"
-                placeholder="enter the name you want to search" required autocomplete="off">
-            <button type="submit" id="submitbutton" class="btn rounded-pill w-25 btn-outline-dark mt-3">search </button>
-           </form>
-           
-       </div>
+   <div class="container-fluid mybackground mb-5 h-100 mt-2" id="first">
+       <h1 class="own-background-content__heading">welcome to the world of comics</h1>
+       <br><hr size="30">
+       <h3 class="display-4 content-justify text-center pt-5">in this site you can search any superhero or supervillain you want to search </h3>
+      <br> <hr size="30">
+       <h4 class="display-5 content-justify text-center mt-5">you can even watch any movie or tv series of your choice</h4>
+       <a href="movies.html" class="btn btn-outline-dark mt-3 mb-4 btn-lg btn-block mx-auto rounded-pill" id="moviebutton" target="_blank">watch movies &amp; tv series</a>
+     </div>
+        <form class="form-group bg-warning">
+             <h3 class="display-4 text-center content-justify">you can search any superhero you can think of ....</h3>
+       
+        <input type="text" class="form-control mt-5 mb-4 w-75 mx-auto rounded-pill text-center align-center" name=""
+            id="searchname" placeholder="enter the name you want to search" required autocomplete="off">
+        <button type="submit" id="submitbutton" class="btn rounded-pill mb-4 btn-lg w-25 btn-block mx-auto btn-outline-dark mt-3">search </button>
+            </form>
+ 
        <div id="profile" class="profile"></div>
-
+          
     <a href="#first" class="fixedbutton"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
    
+    </div>
+      <footer class="bg-secondary mt-4 text-center ">
+          <h2 class="">All &copy Rights reserved to hritik & gurujot</h2>
+          <a href="https://github.com/hritikchokker"><i class="fab fa-github fa-3x">Hritik</i>
 
-</div>
+      </footer>
 
 
-   
 
-    
+
 
     <script src="js/views/view.js"></script>
     <script src="js/utils/util.js"></script>

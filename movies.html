@@ -40,9 +40,8 @@
       </div>
       <div class="col">
         <label for="yearsearch">Year</label>
-        <input class="form-control text-center w-30 rounded-pill" type="number" name="" id="yearsearch"
-          placeholder="optional"
-          autocomplete="off">
+        <input class="form-control text-center w-30 rounded-pill" required type="number" name="" id="yearsearch"
+          placeholder="optional"  autocomplete="off">
       </div>
     </div>
      <h3 class=" display-5 myform mt-5">if you want to search a tv series please enter its season and episode</h3>
@@ -50,20 +49,26 @@
      
       <div class="col col-md-6 col-sm-6 col-lg-6">
          <label for="seasonsearch">Season</label>
-         <input class="form-control text-center rounded-pill" type="number" name="" id="seasonsearch" placeholder="enter the season here"
+         <input class="form-control text-center rounded-pill" required type="number" name="" id="seasonsearch"
+           placeholder="enter the season here"
            autocomplete="off">
       </div>
       <div class="col col-md-6 col-sm-6 col-lg-6">
         <label class="text-center" for="episodesearch">episode</label>
-        <input class="form-control text-center align-center rounded-pill" type="number" name="" id="episodesearch"
+        <input class="form-control text-center align-center rounded-pill" required type="number" name=""
+          id="episodesearch"
           placeholder="enter the season here" autocomplete="off">
       </div>
     </div>
-    <button id="moviesubmit" class="btn-lg btn-block mt-5 mb-5 mx-auto btn w-25 rounded-pill btn-outline-danger text-center" type="submit" >submit request</button>
+    <button id="moviesubmit" class="btn rounded-pill mb-4 btn-lg  btn-block mx-auto btn-outline-danger mt-3" type="submit">submit request</button>
     <!-- </form> -->
   </div>
   <div class="jumbotron-fluid bg-dark"><div class="mt-5" id="result"></div></div>
+ <footer class="bg-secondary text-center mt-4">
+   <h2 class="">All &copy Rights reserved to hritik & gurujot</h2>
+   <a href="https://github.com/hritikchokker"><i class="fab fa-github fa-3x">Hritik</i>
 
+ </footer>
   <a href="#movie-first" class="fixedbutton"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
