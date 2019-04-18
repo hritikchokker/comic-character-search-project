@@ -22,14 +22,16 @@
 
 <body>
   <div class="container-fluid movie-section bg-primary">
+    <a href="index.html" class="fixedmoviebutton"><i class="fas fa-arrow-left fa-3x"></i></a>
     <div class="first" id="movie-first">
       <h1 class="mt-5 own-background-content__heading">here you can search any movie you want to watch </h1>
     </div>
-    <form class="form-group"  action="">
+    <!-- <form class="form-group"> -->
     <div class="row mt-5 ">
       <div class="col ">
         <label class="input-group " for="imdbsearch">IMDB ID</label>
-        <input class="form-control w-30 rounded-pill" type="number" name="" id="imdbsearch" placeholder="enter the imdb id" required autocomplete="off">
+        <input class="form-control text-center w-30 rounded-pill" type="text" name="" id="imdbsearch"
+          placeholder="enter the imdb id" required autocomplete="off">
       </div>
       <div class="col">
         <label for="namesearch">Name</label>
@@ -57,14 +59,15 @@
           placeholder="enter the season here" autocomplete="off">
       </div>
     </div>
-    <button id="moviesubmit" class="btn-lg btn-block mt-5 mx-auto btn w-25 rounded-pill btn-outline-danger text-center" type="submit" >submit request</button>
-    </form>
+    <button id="moviesubmit" class="btn-lg btn-block mt-5 mb-5 mx-auto btn w-25 rounded-pill btn-outline-danger text-center" type="submit" >submit request</button>
+    <!-- </form> -->
   </div>
-  <div id="result"></div>
+  <div class="jumbotron-fluid bg-dark"><div class="mt-5" id="result"></div></div>
 
   <a href="#movie-first" class="fixedbutton"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="js/utils/movieutil.js"></script>
   <script src="js/views/movie_view.js"></script>
   <script src="js/controllers/controller_movie.js"></script>
 </body>

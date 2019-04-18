@@ -69,27 +69,3 @@ text-shadow:0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     z-index: 10000;
     transform: all .4s;
 }
-
-.bg-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 70vh;
-    width: inherit;
-    z-index: -200;
-    opacity: 0.4;
-    overflow: hidden;
-    }
-    .result{
-        background: yellow;
-     
-    }
-
-   
-
-
- /* .bg-video__content {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    } */
